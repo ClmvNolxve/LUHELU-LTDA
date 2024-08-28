@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quesos Gourmet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Quesos Gourmet Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>Descubre el Mundo de los Quesos Artesanales</h2>
+            <p>Quesos seleccionados de las mejores granjas y productores del mundo.</p>
+            <a href="#productos" class="cta-button">Explora Nuestro Catálogo</a>
+        </div>
+    </section>
+
+    <section id="productos" class="productos">
+        <div class="container">
+            <h2>Nuestros Productos</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="queso_manchego.jpg" alt="Queso Manchego">
+                    <h3>Queso Manchego</h3>
+                    <p>Un queso español con un sabor inconfundible y una textura firme.</p>
+                    <p class="price">$15.00</p>
+                    <button class="cta-button" onclick="addToCart('Queso Manchego', 15)">Añadir al Carrito</button>
+                    <a href="#detalle-manchego" class="cta-button">Ver Detalles</a>
+                </div>
+                <div class="product">
+                    <img src="queso_brie.jpg" alt="Queso Brie">
+                    <h3>Queso Brie</h3>
+                    <p>Suave, cremoso y con un sabor delicado, perfecto para cualquier ocasión.</p>
+                    <p class="price">$12.00</p>
+                    <button class="cta-button" onclick="addToCart('Queso Brie', 12)">Añadir al Carrito</button>
+                    <a href="#detalle-brie" class="cta-button">Ver Detalles</a>
+                </div>
+                <div class="product">
+                    <img src="queso_gorgonzola.jpg" alt="Queso Gorgonzola">
+                    <h3>Queso Gorgonzola</h3>
+                    <p>Un queso azul italiano, con un sabor fuerte y picante.</p>
+                    <p class="price">$18.00</p>
+                    <button class="cta-button" onclick="addToCart('Queso Gorgonzola', 18)">Añadir al Carrito</button>
+                    <a href="#detalle-gorgonzola" class="cta-button">Ver Detalles</a>
+                </div>
+                <div class="product">
+                    <img src="queso_cheddar.jpg" alt="Queso Cheddar">
+                    <h3>Queso Cheddar</h3>
+                    <p>Fuerte y sabroso, este queso inglés es un clásico para cualquier paladar.</p>
+                    <p class="price">$10.00</p>
+                    <button class="cta-button" onclick="addToCart('Queso Cheddar', 10)">Añadir al Carrito</button>
+                    <a href="#detalle-cheddar" class="cta-button">Ver Detalles</a>
+                </div>
+                <div class="product">
+                    <img src="queso_parmesano.jpg" alt="Queso Parmesano">
+                    <h3>Queso Parmesano</h3>
+                    <p>El rey de los quesos italianos, ideal para rallar sobre tus platos favoritos.</p>
+                    <p class="price">$20.00</p>
+                    <button class="cta-button" onclick="addToCart('Queso Parmesano', 20)">Añadir al Carrito</button>
+                    <a href="#detalle-parmesano" class="cta-button">Ver Detalles</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de detalles de productos -->
+    <section id="detalle-manchego" class="detalle-producto">
+        <div class="container">
+            <h2>Queso Manchego</h2>
+            <img src="queso_manchego.jpg" alt="Queso Manchego">
+            <p>El queso manchego es un queso español hecho a partir de leche de oveja. Tiene una textura firme y compacta, con un sabor intenso y ligeramente ácido. Es perfecto para acompañar con vino tinto y una selección de frutas secas.</p>
+            <p><strong>Precio:</strong> $15.00</p>
+            <button class="cta-button" onclick="addToCart('Queso Manchego', 15)">Añadir al Carrito</button>
+        </div>
+    </section>
+
+    <section id="detalle-brie" class="detalle-producto">
+        <div class="container">
+            <h2>Queso Brie</h2>
+            <img src="queso_brie.jpg" alt="Queso Brie">
+            <p>El queso brie es un queso francés suave y cremoso, con una corteza blanca y un interior mantecoso. Es perfecto para untar sobre pan o galletas, y se puede combinar con mermeladas para un contraste delicioso.</p>
+            <p><strong>Precio:</strong> $12.00</p>
+            <button class="cta-button" onclick="addToCart('Queso Brie', 12)">Añadir al Carrito</button>
+        </div>
+    </section>
+
+    <section id="detalle-gorgonzola" class="detalle-producto">
+        <div class="container">
+            <h2>Queso Gorgonzola</h2>
+            <img src="queso_gorgonzola.jpg" alt="Queso Gorgonzola">
+            <p>El queso gorgonzola es un queso azul italiano, conocido por su sabor fuerte y picante. Su textura es suave y cremosa, lo que lo hace ideal para salsas, pastas o para acompañar con higos frescos.</p>
+            <p><strong>Precio:</strong> $18.00</p>
+            <button class="cta-button" onclick="addToCart('Queso Gorgonzola', 18)">Añadir al Carrito</button>
+        </div>
+    </section>
+
+    <section id="detalle-cheddar" class="detalle-producto">
+        <div class="container">
+            <h2>Queso Cheddar</h2>
+            <img src="queso_cheddar.jpg" alt="Queso Cheddar">
+            <p>El queso cheddar es un queso inglés con un sabor fuerte y ligeramente picante. Es perfecto para fundir sobre hamburguesas, en sándwiches, o simplemente para disfrutar solo.</p>
+            <p><strong>Precio:</strong> $10.00</p>
+            <button class="cta-button" onclick="addToCart('Queso Cheddar', 10)">Añadir al Carrito</button>
+        </div>
+    </section>
+
+    <section id="detalle-parmesano" class="detalle-producto">
+        <div class="container">
+            <h2>Queso Parmesano</h2>
+            <img src="queso_parmesano.jpg" alt="Queso Parmesano">
+            <p>El queso parmesano es un queso duro y granulado de origen italiano, conocido como el rey de los quesos. Es ideal para rallar sobre pastas, ensaladas, y platos italianos tradicionales.</p>
+            <p><strong>Precio:</strong> $20.00</p>
+            <button class="cta-button" onclick="addToCart('Queso Parmesano', 20)">Añadir al Carrito</button>
+        </div>
+    </section>
+
+    <section id="nosotros" class="nosotros">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos apasionados por el queso y nos dedicamos a ofrecer la mejor selección de quesos artesanales del mundo. Nos enorgullece trabajar con pequeños productores que comparten nuestra dedicación a la calidad y al sabor.</p>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna pregunta o deseas realizar un pedido, no dudes en contactarnos.</p>
+            <p>Email: contacto@quesosgourmet.com</p>
+            <p>Teléfono: +123 456 7890</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Quesos Gourmet. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function addToCart(productName, productPrice) {
+            alert(productName + " ha sido añadido al carrito por $" + productPrice.toFixed(2));
+        }
+    </script>
+</body>
+</html>
